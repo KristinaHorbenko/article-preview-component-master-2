@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Manrope';
+}
+
+.main-section{
+    display: flex;
+    padding: 10%;
+    width: 70%;
+    margin: 0 auto;
+    
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;                   
+    background: rgb(252, 252, 252);
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items:center
+
+  
+
+}
+
+.box-images{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.picture{
+    width: 32rem;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;   
+
+}
+
+.box-avatar{
+    display: flex;
+    flex-direction: row;
+    
+}
+.box-text{
+    padding: 3rem;
+   
+}
+
+h1{
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.described{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    opacity: 0.7; 
+}
+
+.avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10rem;
+    margin-right: 2rem;
+}
+.box-avatar{
+    align-items: center;
+    justify-content: center;
+}
+
+.box-name{
+    margin-right: 18rem;
+}
+
+h2{
+    font-size: 1.3rem;
+    opacity: 0.8; 
+    
+}
+
+.date{
+    font-size: 1.1rem;
+    opacity: 0.5; 
+}
+.name-button{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: white;
+    margin-right: 1rem;
+}
+
+.share-button {
+    position: relative;
+   
+ 
+  
+}
+
+
+
+
+#shareArrow {
+    border: none;          
+    cursor: pointer;      
+    padding: .5rem;          
+    border-radius: 100rem;
+    width: 3rem;
+    height: 3rem;
+    background: hsl(214, 17%, 51%); 
+ 
+  }
+
+  .icon-share{
+    width: 70%;                 
+    height: auto;                 
+    filter: brightness(0) invert(1); /* CSS фильтр для перекраски иконки в белый */
+  }
+
+
+.social-icons {
+    display: none; 
+    position: absolute;
+    top: -120%;        
+    right: -250%;  
+    transform: translateY(-50%); 
+    background-color:  hsl(217, 19%, 35%);  
+    padding: 1.5rem;             
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  
+    border-radius: 1rem
+
+ 
+  }
+
+  .social-icons::before {
+    content: "";
+    position: absolute;
+    top: 98%; 
+    left: 56%; 
+    transform: translateX(-50%);
+    border-width: 1rem 1rem 0 1rem; /* Размеры треугольника */
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent; 
+ 
+}
+
+  .share-container:hover .social-icons {
+    display: block; 
+  }
+  
+.social-icons a {
+    margin: 0 1rem; /* Отступы между иконками */
+  }
+  
+.social-icons img {
+    width: 1.5rem,;   /* Ширина иконки */
+    height: 1.5rem;  /* Высота иконки */
+  }
+
+  @media (max-width: 1200px) {
+    html {
+        font-size: 53%;
+    }
+}
+
+
+  @media (max-width: 768px) {
+    .main-section{
+        display: flex;
+        padding: 10%;
+        width: 90%;
+        margin: 0 auto;
+        
+        
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .picture{
+        border-radius: 0;
+        width: 100%;
+    }
+    .described{
+        margin-bottom: 4rem;
+
+    }
+    .box-name{
+        margin-right: 10rem;
+    }
+    .social-icons::before {
+        display: none;
+    }
+  
+
+    .share-button {
+        position: relative;
+        width: 100%;
+        z-index: 21;
+       
+        
+        
+  
+
+
+      }
+    
+      /* Стили для появления синего фона */
+     .social-icons {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Чтобы перекрыть аватар и имя */
+        padding: 3rem;
+        border-radius: 0 0 1rem 1rem;
+    }
+    
+      .share-button.active button {
+      
+        
+      }
+    }
+    
+
+    
+
+
+  
+
+   
+  
